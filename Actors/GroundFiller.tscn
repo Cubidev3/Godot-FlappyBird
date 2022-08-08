@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Sprites/Background/GroundFiller.png" type="Texture" id=1]
+[ext_resource path="res://GroundFiller.gd" type="Script" id=2]
+
+[node name="GroundFiller" type="Sprite"]
+scale = Vector2( 1, 1 )
+texture = ExtResource( 1 )
+script = ExtResource( 2 )

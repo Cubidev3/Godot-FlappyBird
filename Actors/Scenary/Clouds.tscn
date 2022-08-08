@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Scripts/Scenary/Scenary.gd" type="Script" id=1]
+[ext_resource path="res://Sprites/Background/BackgroundClouds.png" type="Texture" id=2]
+
+[node name="Clouds" type="Node2D"]
+z_index = -3
+script = ExtResource( 1 )
+extents = Vector2( 75, 128 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 0, 128 )
+z_index = 5
+texture = ExtResource( 2 )

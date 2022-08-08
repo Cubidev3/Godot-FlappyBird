@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Scripts/Scenary/Scenary.gd" type="Script" id=1]
+[ext_resource path="res://Actors/Pipe.tscn" type="PackedScene" id=2]
+
+[node name="PipeDuo" type="Node2D"]
+script = ExtResource( 1 )
+extents = Vector2( 16, 152 )
+
+[node name="PipeDown" parent="." instance=ExtResource( 2 )]
+
+[node name="PipeUp" parent="." instance=ExtResource( 2 )]
+position = Vector2( 0, -48 )
+scale = Vector2( 1, -1 )
