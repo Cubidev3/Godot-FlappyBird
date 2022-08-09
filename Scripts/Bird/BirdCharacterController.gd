@@ -80,6 +80,7 @@ func _die():
 func _hit_ground():
 	_die()
 	hit_the_ground = true
+	get_tree().reload_current_scene()
 	
 func rotate_bird_sprite() -> void:
 	sprite.rotation = deg2rad(calculate_bird_rotation())
